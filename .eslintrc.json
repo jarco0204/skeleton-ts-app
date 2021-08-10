@@ -3,21 +3,16 @@
         "eslint:recommended",
         "plugin:import/errors",
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "prettier"
     ],
     "rules": {
         "@typescript-eslint/no-empty-function": 0
     },
-    "plugins": [ "import" , "@typescript-eslint"],
+    "plugins": [ "import" , "@typescript-eslint/eslint-plugin"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 2021,
         "project": "./tsconfig.json",
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
+        "sourceType": "module"
     },
     "env": {
         "es6": true,
